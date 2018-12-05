@@ -52,7 +52,7 @@ body {
   
   /* header */
   
-  #masthead {
+  /*#masthead {
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -61,7 +61,7 @@ body {
     color: #ffffff;
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
-  }
+  }*/
   
   #logo {
     float: left;
@@ -76,11 +76,25 @@ body {
     text-decoration: none;
     background: #4aaaa5;
   }
-  
-  nav {
-    float: right;
-    margin-top: 25px;
-  }
+  /*NAVBAR*/
+  .nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align:right;
+    height:70px;
+    line-height: 70px;
+    }
+
+    .menu{
+      margin: 0 30px 0 0 :
+    }
+
+    .menu a {
+      clear:right;
+      text-decoration:none;
+      color:gray;
+      margin: 0 10px;
+      line-height: 70px;
+    }
   
   nav a {
     display: inline-block;
@@ -91,11 +105,24 @@ body {
     text-decoration: none;
     border-left: 1px solid #efefef;
   }
-  
-  nav a:first-child {
+  span{
+    color: #54D17A;
+  }
+label{
+  margin:0 40px 0 0;
+  font-size :26px;
+  line-height: 70px;
+  display:none;
+  width:26px;
+  float:right;
+}
+#toggle{
+  display:none;
+}
+  /*nav a:first-child {
     border-left: 0 none;
   }
-  
+  */
   /* footer */
   
   footer {
@@ -215,5 +242,25 @@ body {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+  }
+
+  @media only screen and (max-width :500px){
+    label { 
+    display:block;
+    cursor :pointer;  
+    }
+    .menu{
+      text-align:center;
+      width: 100%;
+      display:none;
+    }
+    .menu a {
+      display: block;
+      border-bottom: 1px solid #EAEAEB;
+      margin:0;
+    }
+    #toggle:checked + .menu{
+      display:block;
+    }
   }
   
